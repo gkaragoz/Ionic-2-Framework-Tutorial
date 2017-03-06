@@ -9,12 +9,19 @@ import { DetailsPage } from '../details/details';
 })
 export class RedditsPage {
   items: any;
+  category: any;
+  limit: any;
   constructor(public navCtrl: NavController, private redditService:RedditService) {
-
+    this.getDefault();
   }
 
   ngOnInit(){
-    this.getPosts('sports', 10);
+    this.getPosts(this.category, this.limit);
+  }
+
+  getDefault(){
+    this.category = 'sports';
+    this.limit = 10;
   }
 
   getPosts(category, limit){
@@ -27,6 +34,10 @@ export class RedditsPage {
     this.navCtrl.push(DetailsPage, {
       item:item
     });
+  }
+
+  changeCategory(){
+    this.getPosts(this.category, this.limit);
   }
 
 }
