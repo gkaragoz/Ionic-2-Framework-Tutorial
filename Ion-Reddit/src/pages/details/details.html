@@ -21,7 +21,22 @@
               {{item.author}}
             </ion-note>
           </ion-item>
+          <ion-item>
+            <ion-icon name="thumbs-up" item-left></ion-icon>
+            Score
+            <ion-note item-right>
+              {{item.score}}
+            </ion-note>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="chatboxes" item-left></ion-icon>
+            Comments
+            <ion-note item-right>
+              {{item.num_comments}}
+            </ion-note>
+          </ion-item>
         </ion-list>
+        <a ion-button block target="_blank" href="http://reddit.com/{{item.permalink}}">View On Reddit </a>
     </ion-card-content>
   </ion-card>
 </ion-content>
