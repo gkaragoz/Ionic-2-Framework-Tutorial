@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Alerts</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="action-sheets-basic-page">
+  <ion-card padding>
+    <h2>Alerts are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision (or multiple decisions).</h2>
+    <br\>
+    <button ion-button block color="dark" (click)="doAlert()">Show Basic Alert</button>
+    <br\>
+    <button ion-button color="secondary" block (click)="doPrompt()">Show Prompt Alert</button>
+    <br\>
+    <button ion-button color="primary" block (click)="doConfirm()">Show Confirm Alert</button>
+    <br\>
+    <button ion-button block light (click)="doRadio()">Show Radio Alert</button>
+    <br\>
+    <button ion-button block color="danger" (click)="doCheckbox()">Show Checkbox Alert</button>
+  </ion-card>
+</ion-content>
