@@ -9,6 +9,7 @@ import { ButtonsPage } from '../pages/buttons/buttons';
 import { CardsPage } from '../pages/cards/cards';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { DateTimePage } from '../pages/datetime/datetime';
+import { FabsPage } from '../pages/fabs/fabs';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DateTimePage } from '../pages/datetime/datetime';
     ButtonsPage,
     CardsPage,
     CheckboxPage,
-    DateTimePage
+    DateTimePage,
+    FabsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -35,7 +37,8 @@ import { DateTimePage } from '../pages/datetime/datetime';
     ButtonsPage,
     CardsPage,
     CheckboxPage,
-    DateTimePage
+    DateTimePage,
+    FabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

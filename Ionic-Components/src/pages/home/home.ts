@@ -16,6 +16,8 @@ import { CheckboxPage } from '../checkbox/checkbox';
 
 import { DateTimePage } from '../datetime/datetime';
 
+import { FabsPage } from '../fabs/fabs';
+
 @Component({
   templateUrl: 'home.html'
 })
@@ -49,5 +51,9 @@ export class HomePage {
 
   openDateTimePage() {
     this.nav.push(DateTimePage);
+  }
+
+  openFabsPage() {
+    this.nav.push(FabsPage);
   }
 }
