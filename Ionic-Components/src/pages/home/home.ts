@@ -14,6 +14,8 @@ import { CardsPage } from '../cards/cards';
 
 import { CheckboxPage } from '../checkbox/checkbox';
 
+import { DateTimePage } from '../datetime/datetime';
+
 @Component({
   templateUrl: 'home.html'
 })
@@ -41,7 +43,11 @@ export class HomePage {
     this.nav.push(CardsPage);
   }
 
-  openCheckboxPage(){
+  openCheckboxPage() {
     this.nav.push(CheckboxPage);
+  }
+
+  openDateTimePage() {
+    this.nav.push(DateTimePage);
   }
 }
