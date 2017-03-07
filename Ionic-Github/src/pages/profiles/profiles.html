@@ -49,7 +49,7 @@
         </button>
       </ion-col>
       <ion-col>
-        <button ion-button icon-left clear small>
+        <button ion-button icon-left clear small (click)="showRepos(profiles.login)">
           <ion-icon name="git-branch"></ion-icon>
           <div>{{profiles.public_repos}} Public Repos</div>
         </button>
