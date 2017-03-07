@@ -33,10 +33,21 @@ export class ProfilesPage {
     this.github_user = '';
   }
 
+  showRepos(github_user){
+    this.getRepos(github_user);
+  }
+
   getProfile(username){
     this.githubService.getProfile(username).subscribe(response => {
       this.profiles = response;
       console.log(this.profiles);
+    })
+  }
+
+  getRepos(username){
+    this.githubService.getRepos(username).subscribe(response => {
+      this.repos = response;
+      console.log(this.repos);
     })
   }
 
