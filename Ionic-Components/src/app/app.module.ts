@@ -12,6 +12,7 @@ import { DateTimePage } from '../pages/datetime/datetime';
 import { FabsPage } from '../pages/fabs/fabs';
 import { GesturesPage } from '../pages/gestures/gestures';
 import { GridPage } from '../pages/grid/grid';
+import { InputsPage } from '../pages/inputs/inputs';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GridPage } from '../pages/grid/grid';
     DateTimePage,
     FabsPage,
     GesturesPage,
-    GridPage
+    GridPage,
+    InputsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -44,7 +46,8 @@ import { GridPage } from '../pages/grid/grid';
     DateTimePage,
     FabsPage,
     GesturesPage,
-    GridPage
+    GridPage,
+    InputsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

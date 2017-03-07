@@ -22,6 +22,8 @@ import { GesturesPage } from '../gestures/gestures';
 
 import { GridPage } from '../grid/grid';
 
+import { InputsPage } from '../inputs/inputs';
+
 @Component({
   templateUrl: 'home.html'
 })
@@ -67,5 +69,9 @@ export class HomePage {
 
   openGridPage() {
     this.nav.push(GridPage);
+  }
+
+  openInputsPage() {
+    this.nav.push(InputsPage);
   }
 }
