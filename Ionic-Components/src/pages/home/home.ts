@@ -6,6 +6,10 @@ import { ActionSheetPage } from '../action-sheet/action-sheet';
 
 import { AlertsPage } from '../alerts/alerts';
 
+import { BadgesPage } from '../badges/badges';
+
+import { ButtonsPage } from '../buttons/buttons';
+
 @Component({
   templateUrl: 'home.html'
 })
@@ -19,5 +23,13 @@ export class HomePage {
 
   openAlertsPage() {
     this.nav.push(AlertsPage);
+  }
+
+  openBadgesPage() {
+    this.nav.push(BadgesPage);
+  }
+  
+  openButtonsPage() {
+    this.nav.push(ButtonsPage);
   }
 }
