@@ -20,6 +20,8 @@ import { FabsPage } from '../fabs/fabs';
 
 import { GesturesPage } from '../gestures/gestures';
 
+import { GridPage } from '../grid/grid';
+
 @Component({
   templateUrl: 'home.html'
 })
@@ -61,5 +63,9 @@ export class HomePage {
 
   openGesturesPage() {
     this.nav.push(GesturesPage);
+  }
+
+  openGridPage() {
+    this.nav.push(GridPage);
   }
 }

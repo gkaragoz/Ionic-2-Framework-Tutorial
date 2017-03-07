@@ -11,6 +11,7 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { DateTimePage } from '../pages/datetime/datetime';
 import { FabsPage } from '../pages/fabs/fabs';
 import { GesturesPage } from '../pages/gestures/gestures';
+import { GridPage } from '../pages/grid/grid';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GesturesPage } from '../pages/gestures/gestures';
     CheckboxPage,
     DateTimePage,
     FabsPage,
-    GesturesPage
+    GesturesPage,
+    GridPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -41,7 +43,8 @@ import { GesturesPage } from '../pages/gestures/gestures';
     CheckboxPage,
     DateTimePage,
     FabsPage,
-    GesturesPage
+    GesturesPage,
+    GridPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
