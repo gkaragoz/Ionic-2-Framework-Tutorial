@@ -7,6 +7,7 @@ import { AlertsPage } from '../pages/alerts/alerts';
 import { BadgesPage } from '../pages/badges/badges';
 import { ButtonsPage } from '../pages/buttons/buttons';
 import { CardsPage } from '../pages/cards/cards';
+import { CheckboxPage } from '../pages/checkbox/checkbox';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardsPage } from '../pages/cards/cards';
     AlertsPage,
     BadgesPage,
     ButtonsPage,
-    CardsPage
+    CardsPage,
+    CheckboxPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +31,8 @@ import { CardsPage } from '../pages/cards/cards';
     AlertsPage,
     BadgesPage,
     ButtonsPage,
-    CardsPage
+    CardsPage,
+    CheckboxPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

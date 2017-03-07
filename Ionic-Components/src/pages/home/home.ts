@@ -12,6 +12,8 @@ import { ButtonsPage } from '../buttons/buttons';
 
 import { CardsPage } from '../cards/cards';
 
+import { CheckboxPage } from '../checkbox/checkbox';
+
 @Component({
   templateUrl: 'home.html'
 })
@@ -37,5 +39,9 @@ export class HomePage {
 
   openCardsPage() {
     this.nav.push(CardsPage);
+  }
+
+  openCheckboxPage(){
+    this.nav.push(CheckboxPage);
   }
 }
