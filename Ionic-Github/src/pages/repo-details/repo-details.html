@@ -28,5 +28,12 @@
       <p><strong>Stars: </strong>{{selectedRepo.stargazers_count}}</p>
       <p><strong>Forks: </strong>{{selectedRepo.forks_count}}</p>
     </ion-card-content>
+    <hr />
+    <ion-card-content>
+      <a href="{{selectedRepo.html_url}}" ion-button icon-left>
+        <ion-icon name="git-network"></ion-icon>
+        <div>Go To Repo Website</div>
+      </a>
+    </ion-card-content>
   </ion-card>
 </ion-content>
