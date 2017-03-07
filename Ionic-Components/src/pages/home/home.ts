@@ -18,6 +18,8 @@ import { DateTimePage } from '../datetime/datetime';
 
 import { FabsPage } from '../fabs/fabs';
 
+import { GesturesPage } from '../gestures/gestures';
+
 @Component({
   templateUrl: 'home.html'
 })
@@ -55,5 +57,9 @@ export class HomePage {
 
   openFabsPage() {
     this.nav.push(FabsPage);
+  }
+
+  openGesturesPage() {
+    this.nav.push(GesturesPage);
   }
 }
