@@ -10,6 +10,8 @@ import { BadgesPage } from '../badges/badges';
 
 import { ButtonsPage } from '../buttons/buttons';
 
+import { CardsPage } from '../cards/cards';
+
 @Component({
   templateUrl: 'home.html'
 })
@@ -31,5 +33,9 @@ export class HomePage {
   
   openButtonsPage() {
     this.nav.push(ButtonsPage);
+  }
+
+  openCardsPage() {
+    this.nav.push(CardsPage);
   }
 }
