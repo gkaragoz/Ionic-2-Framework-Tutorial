@@ -27,7 +27,16 @@
     </form>
     <button ion-button clear small (click)="reset()">Reset</button>
   </ion-card>
-  <ion-card></ion-card>
+
+  <ion-card *ngIf="profiles">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{profiles.avatar_url}}">
+      </ion-avatar>
+      <h2>{{profiles.name}}</h2>
+      <p>{{profiles.location}}</p>
+    </ion-item>
+  </ion-card>
   <ion-card></ion-card>
   
 
