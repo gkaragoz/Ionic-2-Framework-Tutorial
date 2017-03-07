@@ -1,14 +1,46 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>Ionic Components</ion-title>
-  </ion-navbar>
+  </ion-navbar>  
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-left>
-      <ion-icon name="infinite" [ngStyle]="{'color': item.color}" item-left></ion-icon>
-      {{ item.title }}
+  <ion-list >
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" style="color: #E63135" item-left></ion-icon>
+      Action Sheet
+    </button>
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" style="color: #0CA9EA" item-left></ion-icon>
+      Action Sheets
+    </button>
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" style="color: #F46529" item-left></ion-icon>
+      Action Sheet2
+    </button>
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" style="color: #FFD439" item-left></ion-icon>
+      Action Sheet3
+    </button>
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" style="color: #CE6296" item-left></ion-icon>
+      Action Sheet4
+    </button>
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" style="color: #78BD43" item-left></ion-icon>
+      Action Sheet
+    </button>
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" style="color: #3575AC" item-left></ion-icon>
+      Action Sheet
+    </button>
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" style="color: #412159" item-left></ion-icon>
+      Action Sheet
+    </button>
+    <button ion-item (click)="openActionSheetPage()" icon-left>
+      <ion-icon name="infinite" color="#000" item-left></ion-icon>
+      Action Sheet
     </button>
   </ion-list>
 </ion-content>
