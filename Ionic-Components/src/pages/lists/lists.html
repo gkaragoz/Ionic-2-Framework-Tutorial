@@ -1,0 +1,14 @@
+<ion-header>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <ion-navbar color="primary">
+    <ion-title>Lists</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (tap)="itemSelected(item)">
+      {{ item }}
+    </button>
+  </ion-list>
+</ion-content>
